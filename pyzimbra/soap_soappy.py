@@ -124,7 +124,7 @@ class ZimbraSOAPParser(SOAPpy.SOAPParser):
         SOAPpy.SOAPParser.endElementNS(self, name, qname)
 
 
-def parseSOAP(xml_str, rules = None):
+def parseSOAP(xml_str, rules = None, ignore_ext = None):
     """
     Replacement for SOAPpy._parseSOAP method to spoof SOAPParser.
     """
